@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amanuel Ergogo | Robotics & HAI Research</title>
+  <meta name="description" content="Amanuel Ergogo — PhD student in CSE at USF. Research in human–AI interaction, autonomy, explainability, and human–robot interaction." />
+  <style>
+    :root{
+      --bg:#0b0d10;
+      --panel:#12151a;
+      --panel-2:#0f1216;
+      --text:#e7eaf0;
+      --muted:#a9b1bd;
+      --accent:#7bdff2;
+      --accent-2:#b28dff;
+      --ring: 0 0 0 2px rgba(123,223,242,.25);
+      --radius:16px;
+      --maxw:1050px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color:var(--text);
+      background: radial-gradient(900px 450px at 80% -10%, #1a2130 0%, transparent 60%),
+                  radial-gradient(800px 400px at -10% 10%, #1b1f2a 0%, transparent 55%),
+                  var(--bg);
+      line-height:1.6;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{
+      position:sticky; top:0; z-index:10;
+      backdrop-filter: blur(8px);
+      background: rgba(11,13,16,.7);
+      border-bottom:1px solid #20252d;
+    }
+    nav{
+      max-width:var(--maxw); margin:0 auto; padding:10px 16px;
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.2px;
+    }
+    .brand-dot{
+      width:10px; height:10px; border-radius:50%;
+      background: linear-gradient(45deg,var(--accent),var(--accent-2));
+      box-shadow:0 0 18px rgba(123,223,242,.6);
+    }
+    .navlinks{display:flex; flex-wrap:wrap; gap:10px}
+    .navlinks a{
+      font-size:.95rem; color:var(--muted);
+      padding:6px 10px; border-radius:999px;
+    }
+    .navlinks a:hover{color:var(--text); background:var(--panel)}
+    main{max-width:var(--maxw); margin:0 auto; padding:28px 16px 70px}
+    section{margin:28px 0}
+    .hero{
+      display:grid; grid-template-columns: 1.2fr .8fr; gap:18px; align-items:center;
+      background: linear-gradient(180deg, rgba(255,255,255,.03), transparent);
+      border:1px solid #1e232a; border-radius:var(--radius); padding:22px;
+    }
+    .hero h1{font-size:2.1rem; margin:0 0 6px}
+    .hero p{color:var(--muted); margin:.4rem 0}
+    .badge-row{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
+    .badge{
+      font-size:.85rem; color:#dfe5ee; background:var(--panel);
+      border:1px solid #222832; padding:4px 9px; border-radius:999px;
+    }
+    .hero-card{
+      background:var(--panel);
+      border:1px solid #1f2530; border-radius:var(--radius);
+      padding:16px; display:grid; gap:10px;
+    }
+    .profile-img{
+      width:100%; aspect-ratio: 1/1; object-fit:cover; border-radius:12px;
+      border:1px solid #2a3240; background:#0c0f14;
+    }
+    .grid{
+      display:grid; gap:12px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    .card{
+      background:var(--panel);
+      border:1px solid #1e232a; border-radius:14px; padding:14px 14px 12px;
+    }
+    .card h3{margin:0 0 6px; font-size:1.05rem}
+    .muted{color:var(--muted)}
+    .list{
+      display:grid; gap:8px; margin:0; padding-left:18px;
+    }
+    .timeline{display:grid; gap:10px}
+    .item{
+      padding:12px; background:var(--panel-2); border:1px dashed #252c36; border-radius:12px;
+    }
+    .item .when{font-size:.9rem; color:var(--muted)}
+    .pill{
+      display:inline-block; font-size:.8rem; padding:2px 8px; border-radius:999px;
+      background:#10141a; border:1px solid #242b35; color:#cfd6e0;
+      margin-left:6px;
+    }
+    footer{
+      max-width:var(--maxw); margin:0 auto; padding:18px 16px 35px;
+      color:var(--muted); border-top:1px solid #20252d;
+      display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px;
+    }
+    .contact-row{display:flex; gap:12px; flex-wrap:wrap}
+    .contact-chip{
+      background:var(--panel); border:1px solid #232a34; padding:6px 10px; border-radius:999px;
+      color:var(--text); font-size:.95rem;
+    }
+    /* small screens */
+    @media (max-width: 780px){
+      .hero{grid-template-columns:1fr}
+      .hero h1{font-size:1.8rem}
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <span>Amanuel Ergogo</span>
+      </div>
+      <div class="navlinks">
+        <a href="#about">About</a>
+        <a href="#updates">Updates</a>
+        <a href="#publications">Publications</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#story">How it all started</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ABOUT / HERO -->
+    <section id="about" class="hero">
+      <div>
+        <h1>Hi, I’m Amanuel.</h1>
+        <p>
+          I’m a Ph.D. student in Computer Science & Engineering at the University of South Florida,
+          advised by Prof. Zhao Han. I have a background in automation and robotics, with over two years
+          of experience in assistive AI robotics for healthcare at the Sano Center for Computational Medicine.
+        </p>
+        <p>
+          My research focuses on human–AI interaction, autonomy, and explainability. Currently, I work on
+          making foundational robotics model-driven robots more transparent, effective, and safe in human–robot interaction.
+        </p>
+        <div class="badge-row">
+          <span class="badge">Human–AI Interaction</span>
+          <span class="badge">Explainable Robotics</span>
+          <span class="badge">Human–Robot Collaboration</span>
+          <span class="badge">Imitation Learning</span>
+          <span class="badge">RL & Simulation</span>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <!-- Replace with your photo -->
+        <img class="profile-img" src="assets/profile.jpg" alt="Amanuel Ergogo portrait" />
+        <div class="muted">
+          University of South Florida · Tampa, FL<br />
+          Ph.D. Student, CSE
+        </div>
+        <div class="contact-row">
+          <a class="contact-chip" href="mailto:aergogo@usf.edu">aergogo@usf.edu</a>
+          <a class="contact-chip" href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="contact-chip" href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+          <!-- Resume PDF link -->
+          <a class="contact-chip" href="assets/Resume_AE.pdf" target="_blank" rel="noreferrer">Resume (PDF)</a>
+        </div>
+      </aside>
+    </section>
+
+    <!-- UPDATES -->
+    <section id="updates">
+      <h2>Recent Updates</h2>
+      <div class="timeline">
+        <div class="item">
+          <div class="when">June 15, 2025</div>
+          <strong>VERAGMIL: Virtual Environment for Scooping Granular Foods with Imitation Learning Models</strong>
+          <span class="pill">IROS 2025</span>
+          <div class="muted">
+            Full paper on granular-material manipulation accepted to IROS 2025 in Hangzhou, China.
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="when">May 5, 2025</div>
+          <strong>Towards Embodied Agent Intent Explanation in Human-Robot Collaboration</strong>
+          <span class="pill">ICRA 2025 Workshop</span>
+          <div class="muted">
+            Work on embodied-agent intent explanation accepted to the ICRA 2025 workshop
+            on Human-Centered Robot Learning in the Era of Big Data and Large Models (Atlanta, USA).
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="when">Jan 2024</div>
+          <strong>HiLoTEL: VR Robot Interface-Based Human-in-the-Loop Task Execution and Learning</strong>
+          <span class="pill">IEEE VR 2024</span>
+          <div class="muted">
+            Paper accepted to IEEE VR 2024 (Orlando, USA).
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="when">Dec 2023</div>
+          <strong>A Standalone ROS2-Based VR Environment for Teaching Robots through Imitation Learning</strong>
+          <span class="pill">IEEE RAS UK/Ireland</span>
+          <div class="muted">
+            Poster accepted at IEEE UK & Ireland RAS Chapter Conference (Sheffield, UK).
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="when">Jul 2022</div>
+          <strong>EAES Surgical Robotics Conference</strong>
+          <div class="muted">
+            Attended EAES conference in Krakow, Poland and tried the latest surgical robotics and simulators.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications">
+      <h2>Publications</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>VERAGMIL: Virtual Environment for Scooping Granular Foods with Imitation Learning Models</h3>
+          <div class="muted">
+            Amanuel Ergogo, Diego Dall’Alba, Przemyslaw Korzeniowski.<br />
+            IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2025.
+          </div>
+          <div><a href="https://drive.google.com" target="_blank" rel="noreferrer">Paper / PDF</a></div>
+        </article>
+
+        <article class="card">
+          <h3>Towards Embodied Agent Intent Explanation in Human-Robot Collaboration</h3>
+          <div class="muted">
+            Amanuel Ergogo, Zhao Han.<br />
+            ICRA 2025 Workshop on Human-Centered Robot Learning, 2025.
+          </div>
+          <div><a href="https://therarelab.com" target="_blank" rel="noreferrer">Project page</a></div>
+        </article>
+
+        <article class="card">
+          <h3>Design of a Human-Assistance Robot System with Contextual Action Recognition</h3>
+          <div class="muted">
+            Amanuel Ergogo, Teresa Zielinska.<br />
+            Automation 2025: Recent Advances in Automation, Robotics and Measurement, Springer Nature, 2025.
+          </div>
+          <div><a href="https://books.google.com" target="_blank" rel="noreferrer">Book chapter</a></div>
+        </article>
+
+        <article class="card">
+          <h3>HiLoTEL: Virtual Reality Robot Interface-Based Human-in-the-Loop Task Execution and Learning</h3>
+          <div class="muted">
+            Amanuel Ergogo, Diego Dall’Alba, Przemyslaw Korzeniowski.<br />
+            IEEE VRW, 2024.
+          </div>
+          <div><a href="https://ieeexplore.ieee.org" target="_blank" rel="noreferrer">IEEE Xplore</a></div>
+        </article>
+
+        <article class="card">
+          <h3>A Standalone ROS2-Based VR Environment for Interacting and Teaching Robots</h3>
+          <div class="muted">
+            Amanuel Ergogo, Diego Dall’Alba, Przemyslaw Korzeniowski.<br />
+            Poster, IEEE RAS UK & Ireland Chapter Conference, 2024.
+          </div>
+          <div><a href="https://drive.google.com" target="_blank" rel="noreferrer">Poster / PDF</a></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Languages</h3>
+          <ul class="list">
+            <li>C++ / C</li>
+            <li>Python</li>
+            <li>C#</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>XR / Simulation</h3>
+          <ul class="list">
+            <li>Unity, Vuforia</li>
+            <li>IsaacSim / Isaac Lab</li>
+            <li>Gazebo</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Robotics Core</h3>
+          <ul class="list">
+            <li>ROS / ROS2</li>
+            <li>MoveIt, Navigation</li>
+            <li>OpenCV</li>
+            <li>Motion & Task Planning</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Learning / ML</h3>
+          <ul class="list">
+            <li>PyTorch, scikit-learn</li>
+            <li>SB3 RL</li>
+            <li>RoboMimic Imitation Learning</li>
+            <li>VLM / VLA</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Embedded / Tools</h3>
+          <ul class="list">
+            <li>STM32, RTOS</li>
+            <li>MATLAB / Simulink</li>
+            <li>Linux, Git, Pytest, Docker</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="timeline">
+        <div class="item">
+          <h3>HiLoTEL</h3>
+          <p class="muted">
+            Virtual-reality framework for learning and executing tasks in virtual and physical environments.
+            Human experts collaborate with learning agents and intervene when needed (human-in-the-loop).
+          </p>
+          <ul class="list">
+            <li>Reduces repetitive task execution by enabling intuitive supervision.</li>
+            <li>Unity3D digital twin on a VR headset; ROS for VR-to-robot communication.</li>
+          </ul>
+          <!-- Optional image -->
+          <!-- <img src="assets/hilotel.jpg" alt="HiLoTEL screenshot" style="width:100%;margin-top:8px;border-radius:10px;border:1px solid #243042;"> -->
+        </div>
+
+        <div class="item">
+          <h3>Robot learning from demonstration + Deep RL (Robot-assisted feeding)</h3>
+          <p class="muted">
+            Contact-rich food scooping manipulation. Human experts demonstrate scooping with a 3D space mouse,
+            then a policy is trained on demonstrations and fine-tuned in a reinforcement learning environment.
+          </p>
+        </div>
+
+        <div class="item">
+          <h3>Pick novel objects with Deep RL (Sim-to-Real)</h3>
+          <ul class="list">
+            <li>Contact-GraspNet plans grasps for unknown geometry/mechanics.</li>
+            <li>Trained on synthetic data from ~17M trials in simulation.</li>
+            <li>Tested on 7-DOF arm with unseen objects (~80% success).</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <h3>Model-based control of a two-wheeled self-balancing robot</h3>
+          <ul class="list">
+            <li>Controller built from a physical model (Simscape Multibody) in Simulink.</li>
+            <li>Model-based control law allows self-balancing.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT ALL STARTED -->
+    <section id="story">
+      <h2>How it all started</h2>
+      <p class="muted">
+        “You can’t connect the dots looking forward; you can only connect them looking backward...”
+        — Steve Jobs
+      </p>
+
+      <div class="timeline">
+        <div class="item">
+          <h3>Automatic Street Light Control System</h3>
+          <p><strong>Main objective:</strong> Transistor-based controller using photoresistor sensors.</p>
+          <p><strong>Learned:</strong> Analog circuit design, Multisim, circuit analysis, sensor conditioning.</p>
+          <p><strong>Result:</strong> Demonstrated at bachelor’s half-life celebration.</p>
+        </div>
+
+        <div class="item">
+          <h3>Theft Detection & Alerting System for Window Break-ins</h3>
+          <p><strong>Main objective:</strong> Purpose-specific hardwired controller with semiconductor devices.</p>
+        </div>
+
+        <div class="item">
+          <h3>Wind Turbine Generator</h3>
+          <p><strong>Main objective:</strong> Build a low-cost turbine to generate electricity from wind.</p>
+          <ul class="list">
+            <li>Generated ~5V DC with PMDC generators.</li>
+            <li>Used to power compound lights at family home.</li>
+            <li>Challenge: regulation due to air-gap flux behavior.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <h3>Cable Insulation Eccentricity Measuring & Correcting System</h3>
+          <p><strong>Objective:</strong> Measure/correct insulation thickness errors during extrusion.</p>
+          <ul class="list">
+            <li>Designed sensor + signal conditioning system.</li>
+            <li>Simulated correction due to lack of hardware interface.</li>
+            <li><strong>Tech:</strong> Atmega MCU, capacitive depth sensor, stepper motor.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <h3>Projector-Scarcity Solution (Lab Projector App)</h3>
+          <p class="muted">
+            Built an app to act as a projector for labs, enabling real-time control
+            of questions/answers/instructions and anonymous student feedback.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div>
+      <strong>Amanuel Ergogo</strong><br/>
+      Ph.D. Student, Computer Science & Engineering · University of South Florida
+    </div>
+    <div class="contact-row">
+      <a class="contact-chip" href="mailto:aergogo@usf.edu">aergogo@usf.edu</a>
+      <a class="contact-chip" href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+      <a class="contact-chip" href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href');
+        const el = document.querySelector(id);
+        if(!el) return;
+        e.preventDefault();
+        el.scrollIntoView({behavior:'smooth', block:'start'});
+        history.replaceState(null, '', id);
+      });
+    });
+  </script>
+</body>
+</html>
