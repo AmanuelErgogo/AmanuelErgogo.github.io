@@ -1,42 +1,31 @@
-# Amanuel Ergogo - GitHub Pages site
+# Amanuel Ergogo Portfolio
 
-This is the final simplified GitHub Pages version of the portfolio.
+This repository contains Amanuel Ergogo's GitHub Pages portfolio, rebuilt on top of the `sbryngelson/academic-website-template` structure and adapted for direct GitHub Pages publishing.
 
-## Style and structure
+## Stack
 
-This version is intentionally simple and personal-page oriented:
+- Jekyll
+- Liquid templates
+- Bootstrap-based theme and custom Sass
+- YAML data files for projects, experience, publications, and skills
 
-- clean light theme
-- single-page layout
-- projects first
-- concise experience and skills sections
-- research kept visible but not dominant
-- ready to publish on GitHub Pages
+## Local preview
 
-## Files
+1. Install Ruby and Bundler.
+2. Run `bundle install`
+3. Run `bundle exec jekyll serve`
+4. Open `http://127.0.0.1:4000`
 
-- `index.html` - main site
-- `Resume_AE.pdf` - linked resume PDF
-- `.nojekyll` - keeps GitHub Pages in plain static mode
+## Publishing
 
-## Publish on GitHub Pages
+This repository is intended to publish directly from the `main` branch on GitHub Pages.
 
-### Personal site
-1. Create a repository named `AmanuelErgogo.github.io`
-2. Upload the contents of this folder to the repository root
-3. Commit and push
-4. GitHub Pages will publish the site automatically
+In GitHub:
 
-### Project site
-1. Create a repository such as `portfolio`
-2. Upload the files to the repository root
-3. In GitHub, open **Settings -> Pages**
-4. Under **Build and deployment**, choose **Deploy from a branch**
-5. Select the `main` branch and the `/root` folder
-6. Save
+1. Open `Settings -> Pages`
+2. Choose `Deploy from a branch`
+3. Select `main`
+4. Select `/(root)`
+5. Save
 
-## Optional future upgrades
-
-- add one or two project screenshots or GIFs
-- add direct links to repositories or demos for each featured project
-- attach a custom domain later if desired
+The site should publish at `https://amanuelergogo.github.io/`.

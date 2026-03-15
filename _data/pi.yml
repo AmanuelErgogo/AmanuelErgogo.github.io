@@ -1,0 +1,19 @@
+- name: Amanuel Ergogo
+  photo:
+  initials: AE
+  info: PhD Student, Computer Science and Engineering, University of South Florida
+  email: aergogo@usf.edu
+  github: https://github.com/AmanuelErgogo
+  linkedin: https://www.linkedin.com/in/amanuel-ergogo-9506631a8/
+  cv: /Resume_AE.pdf
+  summary:
+    - Robotics and machine learning researcher working across robot learning, simulation, teleoperation, imitation learning, reinforcement learning, and sim-to-real deployment.
+    - My work focuses on practical pipelines that connect data collection, simulation, policy training, evaluation, and physical robot execution.
+  education:
+    - "Jan 2025 - Present: PhD in Computer Science and Engineering, University of South Florida"
+    - "Feb 2020 - Oct 2021: MEng in Control Engineering and Robotics, Wroclaw University of Science and Technology"
+    - "Sep 2013 - Jul 2018: BS in Electrical and Computer Engineering, Wolaita Sodo University"
+  educationshort:
+    - PhD, Computer Science and Engineering - University of South Florida
+    - MEng, Control Engineering and Robotics - Wroclaw University of Science and Technology
+    - BS, Electrical and Computer Engineering - Wolaita Sodo University

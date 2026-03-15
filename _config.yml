@@ -1,0 +1,67 @@
+title: Amanuel Ergogo
+email: aergogo@usf.edu
+description: Academic portfolio of Amanuel Ergogo, a PhD student focused on robot learning, simulation, teleoperation, and sim-to-real manipulation.
+baseurl: ""
+url: "https://amanuelergogo.github.io"
+
+affiliation: >
+  Amanuel Ergogo<br/>
+  PhD Student, Computer Science and Engineering<br/>
+  University of South Florida
+
+location: >
+  Tampa, Florida, USA<br/>
+  Reality, Autonomy, and Robot Experience Lab<br/>
+  University of South Florida
+
+contact: >
+  <a href="mailto:aergogo@usf.edu" target="_blank" rel="noreferrer"><i class="fa fa-envelope fa-1x"></i> aergogo@usf.edu</a><br/>
+  <a href="https://github.com/AmanuelErgogo" target="_blank" rel="noreferrer"><i class="fa fa-github fa-1x"></i> GitHub</a><br/>
+  <a href="https://www.linkedin.com/in/amanuel-ergogo-9506631a8/" target="_blank" rel="noreferrer"><i class="fa fa-linkedin fa-1x"></i> LinkedIn</a><br/>
+  <a href="/Resume_AE.pdf" target="_blank" rel="noreferrer"><i class="fa fa-file-pdf-o fa-1x"></i> Resume</a>
+
+nav_pages:
+  - title: About
+    path: /about/
+  - title: Projects
+    path: /projects/
+  - title: Publications
+    path: /publications/
+  - title: Research
+    path: /research/
+  - title: Experience
+    path: /experience/
+  - title: Resume
+    path: /Resume_AE.pdf
+    new_tab: true
+
+include:
+  - .htaccess
+  - _pages
+
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+  parse_block_html: true
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package-lock.json
+  - update_bootstrap.sh
+  - switch_theme.sh
+  - Rakefile
+  - tags

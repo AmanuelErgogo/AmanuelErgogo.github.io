@@ -1,0 +1,18 @@
+- role: Research Assistant
+  organization: Reality, Autonomy, and Robot Experience Lab, University of South Florida
+  location: Tampa, Florida
+  dates: Jan 2025 - Present
+  bullets:
+    - Developed methods to explain imitation learning and reinforcement learning policy behavior and failures for safety-critical robotics applications.
+    - Designed tasks, collected datasets, and trained action-chunking transformer and diffusion-based imitation learning models.
+    - Planned experiments, analyzed results, and communicated progress across a collaborative robotics research team.
+
+- role: AI Robotics Researcher
+  organization: Sano Centre for Computational Personalized Medicine
+  location: Poland
+  dates: Apr 2022 - Dec 2024
+  bullets:
+    - Built a human-in-the-loop imitation learning system for assistive manipulation with end-to-end training and evaluation loops.
+    - Developed a VR teleoperation and data collection pipeline using Quest 2, HoloLens 2, RGB-D sensing, and force sensing.
+    - Trained and benchmarked imitation and reinforcement learning policies across simulation and real robot rollouts.
+    - Deployed policies to a 7DOF UFactory xArm through ROS and ran sim-to-real transfer experiments.

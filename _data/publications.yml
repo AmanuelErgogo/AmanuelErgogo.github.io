@@ -1,0 +1,35 @@
+- title: "VERAGMIL: Virtual Environment for Scooping Granular Foods with Imitation Learning Models"
+  authors: Amanuel Ergogo, D. Dall'Alba, P. Korzeniowski
+  venue: IROS
+  year: 2025
+  status: Accepted
+  note: First author
+  links:
+    - label: Paper
+      url: https://drive.google.com/file/d/16aBBrkRB-6IAwhgMmT54BYqEners67Tk/view?usp=sharing
+
+- title: "HiLoTEL: Virtual Reality Robot Interface-Based Human-in-the-Loop Task Execution and Learning in the Physical World Through Its Digital Twin"
+  authors: Amanuel Ergogo, D. Dall'Alba, P. Korzeniowski
+  venue: IEEE VR
+  year: 2024
+  status: Accepted
+  note: First author
+  links:
+    - label: Project page
+      url: https://sano.science/research/hilotel-virtual-reality-robot-interface-based-human-in-the-loop-task-execution-and-learning-in-the-physical-world-through-its-digital-twin/
+
+- title: Human-Robot Collaboration Failures in Generative Visuomotor Models
+  authors: Amanuel Ergogo, Grant Henderson, Miguel Osorio Vela, Vidhi Mudaliar, Zhao Han
+  venue: RSS
+  year: 2026
+  status: Under review
+  note: First author
+  links: []
+
+- title: Towards Embodied Agent Intent Explanation in Human-Robot Collaboration
+  authors: Amanuel Ergogo, Zhao Han
+  venue: ICRA 2025 Workshop on Human-Centered Robot Learning
+  year: 2025
+  status: Accepted
+  note: First author
+  links: []

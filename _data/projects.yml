@@ -1,0 +1,60 @@
+- title: VERAGMIL
+  subtitle: Isaac Sim environment for scooping granular foods - IROS 2025
+  description: Built a virtual environment for granular-material manipulation with robot arms and end-effectors, domain randomization, teleoperation support, and integration with imitation and reinforcement learning pipelines.
+  tags:
+    - Isaac Sim
+    - Imitation Learning
+    - Reinforcement Learning
+    - Manipulation
+  highlights:
+    - Created a simulation workflow for scooping and transport tasks.
+    - Supported policy training and evaluation for granular-food manipulation.
+    - Turned the work into a paper and video accepted at IROS 2025.
+  links:
+    - label: Paper
+      url: https://drive.google.com/file/d/16aBBrkRB-6IAwhgMmT54BYqEners67Tk/view?usp=sharing
+
+- title: HiLoTEL
+  subtitle: Human-in-the-loop robot learning through a digital twin - IEEE VR 2024
+  description: Developed a virtual reality robot interface for task execution and demonstration collection, enabling people to teach assistive manipulation tasks through teleoperation and immersive interaction.
+  tags:
+    - Quest 2
+    - HoloLens 2
+    - Unity3D
+    - Teleoperation
+  highlights:
+    - Built the data-collection interface for human demonstrations.
+    - Integrated multimodal sensing including RGB-D and force data.
+    - Used the system to support real-world manipulation learning.
+  links:
+    - label: Project page
+      url: https://sano.science/research/hilotel-virtual-reality-robot-interface-based-human-in-the-loop-task-execution-and-learning-in-the-physical-world-through-its-digital-twin/
+
+- title: Explainable policy behavior for robotics
+  subtitle: RARE Lab - safety-critical robot learning
+  description: Current work on analyzing imitation and reinforcement learning policies so their actions, failure modes, and intent become easier to inspect and communicate in collaborative robotics settings.
+  tags:
+    - Policy Analysis
+    - Explainability
+    - ACT
+    - Diffusion Models
+  highlights:
+    - Designed tasks and datasets for policy evaluation.
+    - Trained action-chunking transformer and diffusion-based imitation models.
+    - Studied error modes for safer and more transparent robot behavior.
+  links: []
+
+- title: Sim-to-real manipulation pipeline
+  subtitle: Training, benchmarking, and deployment on a 7DOF UFactory xArm
+  description: Built a workflow that connected simulation, data collection, policy training, benchmarking, and deployment on a physical robot for assistive manipulation tasks.
+  tags:
+    - ROS
+    - ROS2
+    - xArm
+    - robomimic
+    - Sim-to-real
+  highlights:
+    - Benchmarked imitation and reinforcement learning policies across simulated and real rollouts.
+    - Deployed policies to hardware and ran transfer experiments.
+    - Focused on practical evaluation instead of simulation-only results.
+  links: []

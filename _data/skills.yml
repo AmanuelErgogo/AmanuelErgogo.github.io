@@ -1,0 +1,40 @@
+- category: Robot learning
+  items:
+    - Imitation Learning
+    - Reinforcement Learning
+    - Vision-Language-Action
+    - PyTorch
+    - CUDA
+    - Diffusion Policies
+
+- category: Robotics and control
+  items:
+    - ROS
+    - ROS2
+    - MoveIt
+    - Kinematics
+    - Dynamics
+    - Motion Planning
+    - Task Planning
+
+- category: Simulation and systems
+  items:
+    - Isaac Sim
+    - Isaac Lab
+    - MuJoCo
+    - Gazebo
+    - Python
+    - C/C++
+    - Docker
+    - Linux
+    - Git
+    - SLURM
+
+- category: XR and data collection
+  items:
+    - Unity3D
+    - Quest 2
+    - HoloLens 2
+    - VR Teleoperation
+    - RGB-D
+    - Force Sensing

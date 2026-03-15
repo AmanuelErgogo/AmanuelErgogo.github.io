@@ -1,0 +1,20 @@
+- title: Human-in-the-loop robot learning
+  description: I build systems that let people teach robots through teleoperation, immersive interfaces, and structured demonstrations.
+  highlights:
+    - VR and mixed-reality interfaces for demonstration collection
+    - Multimodal sensing pipelines with RGB-D and force feedback
+    - Assistive manipulation tasks grounded in real deployment constraints
+
+- title: Simulation-first manipulation pipelines
+  description: I use simulation to accelerate data collection, policy training, and benchmarking before transfer to physical robots.
+  highlights:
+    - Isaac Sim and Isaac Lab task environments
+    - Domain randomization and policy evaluation workflows
+    - Sim-to-real transfer experiments on UFactory xArm hardware
+
+- title: Explainable embodied AI
+  description: I study how robot policies fail, how their behavior can be interpreted, and how that improves collaboration and safety.
+  highlights:
+    - Action-chunking transformer and diffusion-policy analysis
+    - Failure mode characterization for collaborative robotics
+    - Communication of intent and behavior in human-robot settings

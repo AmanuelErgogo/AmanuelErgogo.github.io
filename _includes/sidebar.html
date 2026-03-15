@@ -1,0 +1,45 @@
+{% assign member = site.data.pi[0] %}
+
+<div class="jumbotron">
+  <div class="text-center">
+    <a href="{{ '/about/' | relative_url }}" class="no-underline">
+      {% if member.photo %}
+        <img src="{{ site.url }}{{ site.baseurl }}/images/{{ member.photo }}" width="60%" style="display:block; margin-left:auto; margin-right:auto; margin-bottom:12px;" alt="{{ member.name }}">
+      {% else %}
+        <div class="profile-placeholder">{{ member.initials }}</div>
+      {% endif %}
+    </a>
+    <h4>{{ member.name }}</h4>
+    <p class="sidebar-muted">{{ member.info }}</p>
+    <div class="icon-links">
+      {% if member.email %}<a href="mailto:{{ member.email }}" target="_blank" rel="noreferrer" aria-label="Email"><i class="fa fa-envelope-square fa-2x"></i></a>{% endif %}
+      {% if member.cv %}<a href="{{ member.cv | relative_url }}" target="_blank" rel="noreferrer" aria-label="Resume"><i class="fa fa-file-pdf-o fa-2x"></i></a>{% endif %}
+      {% if member.github %}<a href="{{ member.github }}" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fa fa-github-square fa-2x"></i></a>{% endif %}
+      {% if member.linkedin %}<a href="{{ member.linkedin }}" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fa fa-linkedin-square fa-2x"></i></a>{% endif %}
+    </div>
+  </div>
+
+  <ul class="sidebar-list">
+    {% for education in member.educationshort %}
+      <li>{{ education }}</li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="jumbotron">
+  <h4>Current focus</h4>
+  <ul class="sidebar-list">
+    {% for fact in site.data.quick_facts %}
+      <li><strong>{{ fact.label }}:</strong> {{ fact.value }}</li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="jumbotron">
+  <h4>Selected links</h4>
+  <div class="link-row">
+    <a class="btn btn-outline-primary btn-sm" href="{{ '/projects/' | relative_url }}">Projects</a>
+    <a class="btn btn-outline-primary btn-sm" href="{{ '/publications/' | relative_url }}">Publications</a>
+    <a class="btn btn-outline-primary btn-sm" href="{{ '/Resume_AE.pdf' | relative_url }}" target="_blank" rel="noreferrer">Resume</a>
+  </div>
+</div>
